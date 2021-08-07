@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/user_style.css">
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <title>KMS_WEB</title>
+</head>
+<body>
+    <div class="container">
+        <header class="mainHeader">
+            <a class="logo" href="/"><img class="logo__img" src="img/logo4.png" alt="msi">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="">소개</a></li>
+                    <li><a href="">자유기능구현</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mainContent">
+            <!--배너 시작-->
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <div class="slidewrap">
+                    
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a>
+                                <div class="textbox">
+                                    <!-- <h3>첫번째 슬라이드</h3>
+                                    <p>첫번째 슬라이드 입니다.</p> -->
+                                </div>
+                                <img src="./img/main_banner1.png">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a><img src="./img/main_banner2.png"></a>
+                        </li>
+                        <li class="slideitem">
+                            <a><img src="./img/main_banner3.png"></a>
+                        </li class="slideitem">
+            
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+            
+                    </ul>
+                </div>
+            </div>
+            <!--배너 끝-->
+
+            <!--페이지 소개 시작 -->
+            <div class="infoContent">
+                
+            </div>
+
+            <!--페이지 소개 끝 -->
+
+            <!--테이블 게시판 시작 -->
+            <div class="maintables">
+                <div class="thistable" id="doubletable1">
+                    <caption><h3>공지사항</h3></caption>
+                    <table class="type10">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="*;">
+                            <col width="20%">
+                            <col width="20%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="cols">번호</th>
+                                <th scope="cols">제목</th>
+                                <th scope="cols">등록자</th>
+                                <th scope="cols">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>내용이 들어갑니다.</td>
+                                <td>관리자</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>내용이 들어갑니다.</td>
+                                <td>관리자</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="thistable" id="doubletable2">
+                    <table class="type10">
+                        <caption><h3>자유게시판</h3></caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="*;">
+                            <col width="20%">
+                            <col width="20%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="cols">번호</th>
+                                <th scope="cols">제목</th>
+                                <th scope="cols">등록자</th>
+                                <th scope="cols">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>첫 게시글.</td>
+                                <td>홍길동</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>내용이 들어갑니다.</td>
+                                <td>김민수</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>내용이 들어갑니다.</td>
+                                <td>김익명</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--테이블 게시판 끝 -->
+        </div>
+        
+        <footer>
+       
+            <div class="container-footer-all">
+             
+                 <div class="container-body">
+     
+                     <div class="colum1">
+                         <h1>More information about the company</h1>
+                         <p>private business company.</p>
+                     </div>
+     
+                     <div class="colum2">
+     
+                         <h1>Social Media</h1>
+     
+                         <div class="row">
+                             <img src="icon/facebook.png">
+                             <label>Siguenos en Facebook</label>
+                         </div>
+                         <div class="row">
+                             <img src="icon/twitter.png">
+                             <label>Siguenos en Twitter</label>
+                         </div>
+                         <div class="row">
+                             <img src="icon/instagram.png">
+                             <label>Siguenos en Instagram</label>
+                         </div>
+                         <div class="row">
+                             <img src="icon/google-plus.png">
+                             <label>Siguenos en Google Plus</label>
+                         </div>
+                         <div class="row">
+                             <img src="icon/pinterest.png">
+                             <label>Siguenos en Pinteres</label>
+                         </div>
+     
+     
+                     </div>
+     
+                     <div class="colum3">
+     
+                         <h1>information</h1>
+     
+                         <div class="row2">
+                             <img src="icon/house.png">
+                             <label>private</label>
+                         </div>
+     
+                         <div class="row2">
+                             <img src="icon/smartphone.png">
+                             <label>+82-010-****-****</label>
+                         </div>
+     
+                         <div class="row2">
+                             <img src="icon/contact.png">
+                              <label>kms_****@*****.com</label>
+                         </div>
+     
+                     </div>
+     
+                 </div>
+             
+             </div>
+             
+             <div class="container-footer">
+                    <div class="footer">
+                         <div class="copyright">
+                            copyright ⓒ 2021 by KMS All Page Content is property of KMS | <a href="">Minssk</a>
+                         </div>
+     
+                         <div class="information">
+                             <a href="">Informacion Company</a> | <a href="">Privacy and Policy</a> | <a href="">Terms of service</a>
+                         </div>
+                     </div>
+     
+                 </div>
+             
+         </footer>
+    </div>  
+</body>
+</html>
